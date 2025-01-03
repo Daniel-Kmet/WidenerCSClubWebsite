@@ -1,0 +1,26 @@
+[
+  {
+    "Title": "The Rise of AI",
+    "Author": "John Doe",
+    "Description": "Exploring the impact of artificial intelligence in modern technology.",
+    "Date": "January 2024",
+    "HtmlPath": "articles/ai-rise.html",
+    "ImageUrl" : ""
+  },
+  {
+    "Title": "Blazor in Action",
+    "Author": "Jane Smith",
+    "Description": "A deep dive into building web applications using Blazor.",
+    "Date": "February 2024",
+    "HtmlPath": "articles/blazor-action.html",
+    "ImageUrl" : ""
+  },
+  {
+    "Title": "Cybersecurity Trends",
+    "Author": "Alice Johnson",
+    "Description": "Top trends in cybersecurity for the coming years.",
+    "Date": "March 2024",
+    "HtmlPath": "articles/cybersecurity-trends.html",
+    "ImageUrl" : ""
+  }
+]

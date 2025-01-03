@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Format.txt",
+      "PackagePath": "staticwebassets\\Images\\Format.txt"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\DanielKmet.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\DanielKmet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\EvieSnyder.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\EvieSnyder.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\GabrielPopp.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\GabrielPopp.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\GroupPhoto0.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\GroupPhoto0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\GroupPhoto1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\GroupPhoto1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\LeslieKuepo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\LeslieKuepo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\RebeccaTravlos.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\RebeccaTravlos.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Widener_CSCI_Logo.png",
+      "PackagePath": "staticwebassets\\Images\\Widener_CSCI_Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\WidenerCSCIWebPage.styles.css",
+      "PackagePath": "staticwebassets\\WidenerCSCIWebPage.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\articles.json",
+      "PackagePath": "staticwebassets\\articles.json"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\articles\\ai-rise.html",
+      "PackagePath": "staticwebassets\\articles\\ai-rise.html"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\css\\WidenerCSCIWebPage.styles.css",
+      "PackagePath": "staticwebassets\\css\\WidenerCSCIWebPage.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WidenerCSCIWebPage.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WidenerCSCIWebPage.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WidenerCSCIWebPage.props",
+      "PackagePath": "build\\WidenerCSCIWebPage.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WidenerCSCIWebPage.props",
+      "PackagePath": "buildMultiTargeting\\WidenerCSCIWebPage.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WidenerCSCIWebPage.props",
+      "PackagePath": "buildTransitive\\WidenerCSCIWebPage.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

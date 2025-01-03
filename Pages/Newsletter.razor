@@ -1,0 +1,79 @@
+@page "/newsletter"
+@using System.Text.Json
+@using Microsoft.AspNetCore.Components
+@using MudBlazor
+@inject NavigationManager NavigationManager
+@inject HttpClient HttpClient
+
+<MudContainer MaxWidth="MaxWidth.Large">
+    <div class="d-flex flex-wrap">
+        <!-- Main Content -->
+        <div class="flex-grow-1 me-3">
+            <MudPaper Class="p-4" Elevation="2">
+                @foreach (var article in Articles)
+                {
+                    <MudPaper Class="mb-4 p-3">
+                        <MudGrid GutterSize="GutterSize.Small">
+                            <MudItem xs="12" md="4">
+                                <MudImage Src="@article.ImageUrl" Alt="@article.Title" Class="rounded-lg" Width="100" />
+                            </MudItem>
+                            <MudItem xs="12" md="8">
+                                <MudText Typo="Typo.h4" Class="mb-1">@article.Title</MudText>
+                                <MudText Typo="Typo.subtitle2">@article.Author - @article.Date</MudText>
+                                <MudText Typo="Typo.body1" Class="mt-2">@article.Description</MudText>
+                                <MudDivider Class="my-2" />
+                                <MudButton Variant="Variant.Text" Color="Color.Primary" OnClick="() => OpenArticle(article.HtmlPath)">
+                                    Read More
+                                </MudButton>
+                            </MudItem>
+                        </MudGrid>
+                    </MudPaper>
+                }
+            </MudPaper>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="flex-shrink-0" style="width: 300px;">
+            <MudPaper Class="p-3" Style="background-color: rgb(0,114,188); color: white;">
+                <MudText Typo="Typo.h5" Class="mb-3">Want to Read More?</MudText>
+                <MudList T="string" Dense="true">
+                    @foreach (var article in Articles)
+                    {
+                        <MudListItem T="string">
+                            <MudText Style="color: white;">
+                                <MudLink Href="@article.HtmlPath" Target="_blank" Style="color: white;">
+                                    @article.Title | @article.Date
+                                </MudLink>
+                            </MudText>
+                        </MudListItem>
+                    }
+                </MudList>
+            </MudPaper>
+        </div>
+    </div>
+</MudContainer>
+
+@code {
+    private List<Article> Articles = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var metadataJson = await HttpClient.GetStringAsync("articles.json");
+        Articles = JsonSerializer.Deserialize<List<Article>>(metadataJson);
+    }
+
+    private void OpenArticle(string htmlPath)
+    {
+        NavigationManager.NavigateTo(htmlPath, true);
+    }
+
+    private class Article
+    {
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string Description { get; set; }
+        public string Date { get; set; }
+        public string HtmlPath { get; set; }
+        public string ImageUrl { get; set; } // New property for image URL
+    }
+}

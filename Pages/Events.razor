@@ -1,0 +1,86 @@
+@page "/events"
+
+<MudContainer Style="background-color: rgb(0,114,188); padding: 20px;">
+    <MudGrid Class="justify-space-between" AlignItems="start">
+        <!-- Event List Section -->
+        <MudItem xs="12" lg="6">
+            <MudText Typo="Typo.h4" Class="text-center mb-4" Style="color: white;">Upcoming Events</MudText>
+            @foreach (var eventItem in Eventss)
+            {
+                <MudPaper Class="mb-3 p-3" Elevation="2" Style="background-color: white;">
+                    <MudText Typo="Typo.h5" Class="d-flex justify-content-between align-items-center" Style="cursor: pointer;" @onclick="() => ToggleEvent(eventItem.Id)">
+                        <span>@eventItem.Name</span>
+                        <MudIcon Icon="@Icons.Material.Filled.ExpandMore" Style="margin-left: auto; width: 24px; height: 24px;" />
+                    </MudText>
+                    <MudText Typo="Typo.body2" Class="mt-1">@eventItem.Time @eventItem.Date at @eventItem.Location</MudText>
+                    @if (ExpandedEventId == eventItem.Id)
+                    {
+                        <MudText Class="mt-2">@eventItem.Description</MudText>
+                    }
+                </MudPaper>
+            }
+        </MudItem>
+
+        <!-- Calendar Section -->
+        <MudItem xs="12" lg="6">
+            <MudText Typo="Typo.h4" Class="text-center mb-4" Style="color: white;">Calendar</MudText>
+            <MudPaper Style="padding: 10px; background-color: white; max-height: 500px; overflow: auto;">
+                <div>
+                    @if (IsCalendarLoaded)
+                    {
+                    <div class="commonninja_component pid-aec3b604-83aa-4689-90a8-93e57cfc131e"></div>
+                    }
+                    else
+                    {
+                    <MudProgressCircular Indeterminate="true" />
+                    }
+
+                </div>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    private List<Event> Eventss = new()
+    {
+        new Event { Id = 1, Name = "Event 1", Time = "10:00 AM", Date = "01/01/2024", Location = "Location A", Description = "Description for Event 1." },
+        new Event { Id = 2, Name = "Event 2", Time = "2:00 PM", Date = "01/02/2024", Location = "Location B", Description = "Description for Event 2." }
+    };
+
+    private int? ExpandedEventId;
+
+    private void ToggleEvent(int eventId)
+    {
+        if (ExpandedEventId == eventId)
+        {
+            ExpandedEventId = null;
+        }
+        else
+        {
+            ExpandedEventId = eventId;
+        }
+    }
+
+    private class Event
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Time { get; set; }
+        public string Date { get; set; }
+        public string Location { get; set; }
+        public string Description { get; set; }
+    }
+    
+    private bool IsCalendarLoaded = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Task.Delay(1000); // Simulate loading
+            IsCalendarLoaded = true;
+            StateHasChanged();
+        }
+    }
+}

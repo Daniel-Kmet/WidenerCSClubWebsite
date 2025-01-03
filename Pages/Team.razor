@@ -1,0 +1,70 @@
+@page "/team"
+
+<div class="container mt-5">
+    <!-- Computer Science Club Executive Board Section -->
+    <div class="text-center mb-5">
+        <h1>Computer Science Club Executive Board</h1>
+    </div>
+
+    <div class="row text-center">
+        @foreach (var member in ExecutiveBoardMembers)
+        {
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: rgb(0,114,188);">
+                    <img src="@member.ImagePath" alt="@member.AltText" class="card-img-top rounded-lg" style="height: 300px; width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h3 class="card-title" style="font-weight: bold; color: white;">@member.Name</h3>
+                        <p class="card-text" style="color: white;">@member.Position</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Computer Science Faculty Section -->
+    <div class="text-center my-5">
+        <h1>Computer Science Faculty</h1>
+    </div>
+
+    <div class="row text-center">
+        @foreach (var member in FacultyMembers)
+        {
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: rgb(0,114,188);">
+                    <img src="@member.ImagePath" alt="@member.AltText" class="card-img-top rounded-lg" style="height: 300px; width: 100%; object-fit: cover;">
+                    <div class="card-body">
+                        <h6 class="card-title" style="font-weight: bold; color: white;">@member.Name</h6>
+                        <p class="card-text" style="color: white;">@member.Position</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<Member> ExecutiveBoardMembers = new()
+    {
+        new Member { Name = "Evie Snyder", Position = "President", ImagePath = "Images/Team/EvieSnyder.jpg", AltText = "Evie Snyder" },
+        new Member { Name = "Daniel Kmet", Position = "Vice President", ImagePath = "Images/Team/DanielKmet.jpg", AltText = "Daniel Kmet" },
+        new Member { Name = "Rebecca Travlos", Position = "Secretary", ImagePath = "Images/Team/RebeccaTravlos.jpg", AltText = "Rebecca Travlos" },
+        new Member { Name = "Leslie Kuepo", Position = "Treasurer", ImagePath = "Images/Team/LeslieKuepo.jpg", AltText = "Leslie Kuepo" },
+        new Member { Name = "Gabriel Popp", Position = "SGA Representative", ImagePath = "Images/Team/GabrielPopp.jpg", AltText = "Gabriel Popp" },
+        new Member { Name = "Samantha Monroe", Position = "SGA Representative and Social Media Chair", ImagePath = "Images/Team/DanielKmet.jpg", AltText = "Samantha Monroe" },
+        // Add additional executive board members here
+    };
+
+    private List<Member> FacultyMembers = new()
+    {
+        new Member { Name = "Dr. Ada Lovelace", Position = "Professor", ImagePath = "Images/Faculty/AdaLovelace.jpg", AltText = "Dr. Ada Lovelace" },
+        // Add additional faculty members here
+    };
+
+    private class Member
+    {
+        public string Name { get; set; }
+        public string Position { get; set; }
+        public string ImagePath { get; set; }
+        public string AltText { get; set; }
+    }
+}
