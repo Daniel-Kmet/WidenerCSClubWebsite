@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage.csproj": {}
+    "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\WidenerCSCIWebPage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage.csproj": {
+    "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\WidenerCSCIWebPage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage.csproj",
+        "projectUniqueName": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\WidenerCSCIWebPage.csproj",
         "projectName": "WidenerCSCIWebPage",
-        "projectPath": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage.csproj",
+        "projectPath": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\WidenerCSCIWebPage.csproj",
         "packagesPath": "C:\\Users\\kmetd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\obj\\",
+        "outputPath": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kmetd\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -75,13 +70,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0-rc.2.24473.5, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             },
             "MudBlazor": {
@@ -107,7 +102,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.10, 8.0.10]"
+              "version": "[8.0.8, 8.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -115,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

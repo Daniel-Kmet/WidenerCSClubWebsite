@@ -1,7 +1,110 @@
 ﻿@page "/"
+@using System.Text.Json
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
 
-<PageTitle>Home</PageTitle>
+<MudContainer MaxWidth="MaxWidth.Large">
+    <MudGrid GutterSize="GutterSize.None" AlignItems="AlignItems.Start">
+        <!-- Left Section -->
+        <MudItem xs="12" md="4">
+            <!-- Latest Article Popup -->
+            <MudPaper Class="p-3 mb-3" Elevation="2">
+                <MudText Typo="Typo.h5" Class="mb-2">Read Our Latest Article</MudText>
+                @if (LatestArticle != null)
+                {
+                    <MudPaper Class="p-2" Elevation="1" Style="background-color: rgba(0, 0, 0, 0.05);">
+                        <MudText Typo="Typo.h6">@LatestArticle.Title</MudText>
+                        <MudText Typo="Typo.subtitle2">@LatestArticle.Author - @LatestArticle.Date</MudText>
+                        <MudText Typo="Typo.body2" Class="mt-1">@LatestArticle.Description</MudText>
+                        <MudButton Variant="Variant.Outlined" Color="Color.Primary" OnClick="()=>NavigationManager.NavigateTo(LatestArticle.HtmlPath)">
+                            Read More
+                        </MudButton>
+                    </MudPaper>
+                }
+            </MudPaper>
 
-<h1>Hello, world!</h1>
+            <!-- Social Links Section -->
+            <MudPaper Class="p-3 mt-3" Elevation="2">
+                <MudText Typo="Typo.h5" Class="mb-2">Connect with Us</MudText>
+                <MudGrid GutterSize="GutterSize.None" Justify="Justify.FlexEnd">
+                    <MudItem xs="4">
+                        <a href="https://www.linkedin.com/company/widener-computer-science-club/" target="_blank" title="LinkedIn">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 40px; height: 40px;" />
+                        </a>
+                    </MudItem>
+                    <MudItem xs="4">
+                        <a href="https://www.instagram.com/widener_computerscienceclub/" target="_blank" title="Instagram">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 40px; height: 40px;" />
+                        </a>
+                    </MudItem>
+                </MudGrid>
+            </MudPaper>
+        </MudItem>
 
-Welcome to your new app.
+        <!-- Right Section -->
+        <MudItem xs="12" md="8">
+            <MudCarousel Class="carousel-container" Style="max-width: 66%; margin: auto; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border-radius: 12px; padding: 10px;" TData="string">
+                @foreach (var photo in Photos)
+                {
+                <MudCarouselItem>
+                    <img src="@photo" alt="Event Photo" style="width: 20%; height: auto; border-radius: 8px; object-fit: cover;" />
+                </MudCarouselItem>
+                }
+            </MudCarousel>
+        </MudItem>
+
+    </MudGrid>
+</MudContainer>
+
+@code {
+    private Article LatestArticle;
+    private List<Article> Articles = new();
+    private List<string> Photos = new List<string>
+        {
+            "Images/Home/1.jpg",
+            "Images/Home/2.jpg",
+            "Images/Home/3.jpg",
+            "Images/Home/4.jpg",
+            "Images/Home/5.jpg",
+            "Images/Home/6.jpg",
+        };
+        
+    
+
+    protected override async Task OnInitializedAsync()
+        {
+        try
+        {
+        // Load articles.json from the wwwroot folder
+        var metadataJson = await HttpClient.GetStringAsync("articles.json");
+        Articles = JsonSerializer.Deserialize<List<Article>>(metadataJson);
+        LatestArticle = Articles?.OrderByDescending(a => a.Date).FirstOrDefault();
+        }
+        catch (Exception ex)
+        {
+        Console.WriteLine($"Error loading articles: {ex.Message}");
+        }
+    }
+
+    private void OpenArticle(string htmlPath)
+        {
+        NavigationManager.NavigateTo(htmlPath, true);
+        }
+
+    private class Article
+        {
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public DateTime Date { get; set; }
+        public string Description { get; set; }
+        public string HtmlPath { get; set; }
+        }
+}
+
+<style>
+    .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>

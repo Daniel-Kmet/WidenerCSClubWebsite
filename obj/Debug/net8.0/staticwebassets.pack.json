@@ -1,92 +1,128 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Format.txt",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\obj\\Debug\\net8.0\\compressed\\5o6hofrqno.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\About\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\About\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Format.txt",
       "PackagePath": "staticwebassets\\Images\\Format.txt"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\DanielKmet.jpg",
-      "PackagePath": "staticwebassets\\Images\\Team\\DanielKmet.jpg"
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Home\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Home\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\EvieSnyder.jpg",
-      "PackagePath": "staticwebassets\\Images\\Team\\EvieSnyder.jpg"
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Home\\2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Home\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\GabrielPopp.jpg",
-      "PackagePath": "staticwebassets\\Images\\Team\\GabrielPopp.jpg"
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Home\\3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Home\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\GroupPhoto0.jpg",
-      "PackagePath": "staticwebassets\\Images\\Team\\GroupPhoto0.jpg"
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Home\\4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Home\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\GroupPhoto1.jpg",
-      "PackagePath": "staticwebassets\\Images\\Team\\GroupPhoto1.jpg"
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Home\\5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Home\\5.jpg"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\LeslieKuepo.jpg",
-      "PackagePath": "staticwebassets\\Images\\Team\\LeslieKuepo.jpg"
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Home\\6.jpg",
+      "PackagePath": "staticwebassets\\Images\\Home\\6.jpg"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Team\\RebeccaTravlos.jpg",
-      "PackagePath": "staticwebassets\\Images\\Team\\RebeccaTravlos.jpg"
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Team\\EBoard\\DanielKmet.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\EBoard\\DanielKmet.jpg"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\Images\\Widener_CSCI_Logo.png",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Team\\EBoard\\EvieSnyder.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\EBoard\\EvieSnyder.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Team\\EBoard\\GabrielPopp.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\EBoard\\GabrielPopp.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Team\\EBoard\\GroupPhoto0.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\EBoard\\GroupPhoto0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Team\\EBoard\\GroupPhoto1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\EBoard\\GroupPhoto1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Team\\EBoard\\LeslieKuepo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\EBoard\\LeslieKuepo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Team\\EBoard\\RebeccaTravlos.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\EBoard\\RebeccaTravlos.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Team\\Faculty\\Bob Neveln.png",
+      "PackagePath": "staticwebassets\\Images\\Team\\Faculty\\Bob Neveln.png"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Team\\Faculty\\Yana Kortsarts.jpg",
+      "PackagePath": "staticwebassets\\Images\\Team\\Faculty\\Yana Kortsarts.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\Widener_CSCI_Logo.png",
       "PackagePath": "staticwebassets\\Images\\Widener_CSCI_Logo.png"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\WidenerCSCIWebPage.styles.css",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\Images\\background.jpg",
+      "PackagePath": "staticwebassets\\Images\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\WidenerCSCIWebPage.styles.css",
       "PackagePath": "staticwebassets\\WidenerCSCIWebPage.styles.css"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\articles.json",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\articles.json",
       "PackagePath": "staticwebassets\\articles.json"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\articles\\ai-rise.html",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\articles\\ai-rise.html",
       "PackagePath": "staticwebassets\\articles\\ai-rise.html"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\css\\WidenerCSCIWebPage.styles.css",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\css\\WidenerCSCIWebPage.styles.css",
       "PackagePath": "staticwebassets\\css\\WidenerCSCIWebPage.styles.css"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\index.html",
+      "Id": "C:\\Users\\kmetd\\Documents\\GitHub\\WidenerCSClubWebsite\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
-    },
-    {
-      "Id": "C:\\Users\\kmetd\\Downloads\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\WidenerCSCIWebPage\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WidenerCSCIWebPage.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WidenerCSCIWebPage.Microsoft.AspNetCore.StaticWebAssets.props",
