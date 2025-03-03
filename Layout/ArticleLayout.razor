@@ -1,0 +1,62 @@
+@page "/article"
+@using System.Net.Http.Json
+@using Models
+@using MudBlazor
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+@if (articleData == null)
+{
+    <MudText Typo="Typo.h6">Loading article details...</MudText>
+}
+else if (string.IsNullOrEmpty(articleHtml))
+{
+    <MudText Typo="Typo.h6">Loading article content...</MudText>
+}
+else
+{
+    <MudCard Class="mb-4">
+        <MudCardContent>
+            <MudText Typo="Typo.h4" GutterBottom="true">@articleData.Title</MudText>
+            <MudText Typo="Typo.subtitle1" Color="Color.Default">
+                By @articleData.Author on @articleData.Date.ToShortDateString()
+            </MudText>
+            <MudText Typo="Typo.body1" Class="mt-2">
+                @articleData.Description
+            </MudText>
+        </MudCardContent>
+    </MudCard>
+    <MudPaper Class="pa-4">
+        @((MarkupString)articleHtml)
+    </MudPaper>
+}
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "path")]
+    public string HtmlPath { get; set; }
+
+    private string articleHtml;
+    private Article articleData;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (string.IsNullOrEmpty(HtmlPath))
+        {
+            Navigation.NavigateTo("/newsletter");
+            return;
+        }
+        
+        var articles = await Http.GetFromJsonAsync<List<Article>>("articles/articles.json");
+        
+        articleData = articles.FirstOrDefault(a => a.HtmlPath == HtmlPath);
+
+        if (articleData == null)
+        {
+            Navigation.NavigateTo("/newsletter");
+            return;
+        }
+        
+        articleHtml = await Http.GetStringAsync(HtmlPath);
+    }
+}

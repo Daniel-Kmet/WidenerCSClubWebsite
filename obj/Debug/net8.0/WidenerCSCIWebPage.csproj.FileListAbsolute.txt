@@ -2591,7 +2591,6 @@ C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\bin\Debug\net8.0\wwwroot\_f
 C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\bin\Debug\net8.0\wwwroot\_framework\System.IO.wasm.gz
 C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\bin\Debug\net8.0\wwwroot\_framework\System.Net.WebHeaderCollection.wasm.gz
 C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\bin\Debug\net8.0\wwwroot\_framework\System.Security.Cryptography.wasm.gz
-C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\bin\Debug\net8.0\wwwroot\articles.json
 C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\bin\Debug\net8.0\WidenerCSCIWebPage.staticwebassets.runtime.json
 C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\bin\Debug\net8.0\WidenerCSCIWebPage.dll
 C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\bin\Debug\net8.0\WidenerCSCIWebPage.pdb
@@ -3243,3 +3242,4 @@ C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\obj\Debug\net8.0\WidenerCSC
 C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\obj\Debug\net8.0\refint\WidenerCSCIWebPage.dll
 C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\obj\Debug\net8.0\WidenerCSCIWebPage.pdb
 C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\obj\Debug\net8.0\ref\WidenerCSCIWebPage.dll
+C:\Users\kmetd\Documents\GitHub\WidenerCSClubWebsite\bin\Debug\net8.0\wwwroot\articles\articles.json

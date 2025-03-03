@@ -2,6 +2,7 @@
 @using System.Text.Json
 @using Microsoft.AspNetCore.Components
 @using MudBlazor
+@using Models
 @inject NavigationManager NavigationManager
 @inject HttpClient HttpClient
 
@@ -41,7 +42,7 @@
                     {
                         <MudListItem T="string">
                             <MudText Style="color: white;">
-                                <MudLink Href="@article.HtmlPath" Target="_blank" Style="color: white;">
+                                <MudLink Href="@($"/article?path={Uri.EscapeDataString(article.HtmlPath)}")" Target="_blank" Style="color: white;">
                                     @article.Title | @article.Date
                                 </MudLink>
                             </MudText>
@@ -58,22 +59,12 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var metadataJson = await HttpClient.GetStringAsync("articles.json");
+        var metadataJson = await HttpClient.GetStringAsync("articles/articles.json");
         Articles = JsonSerializer.Deserialize<List<Article>>(metadataJson);
     }
 
     private void OpenArticle(string htmlPath)
     {
-        NavigationManager.NavigateTo(htmlPath, true);
-    }
-
-    private class Article
-    {
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string Description { get; set; }
-        public DateTime Date { get; set; }
-        public string HtmlPath { get; set; }
-        public string ImageUrl { get; set; } // New property for image URL
+        NavigationManager.NavigateTo($"/article?path={Uri.EscapeDataString(htmlPath)}", true);
     }
 }

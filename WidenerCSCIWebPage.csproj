@@ -19,13 +19,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Update="wwwroot\articles.json">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
+      <None Include="wwwroot\Images\Widener_CSCI_Logo.png" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Include="wwwroot\Images\Widener_CSCI_Logo.png" />
+      <Content Update="wwwroot\articles\articles.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>

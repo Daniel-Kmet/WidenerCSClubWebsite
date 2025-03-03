@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "WidenerCSCIWebPage",
   "resources": {
-    "hash": "sha256-atoud4q7FG6lLRb/d9Rexyg+fr7hhGR0bbRmMYhb+tE=",
+    "hash": "sha256-A6rsUv2xZnM2pnOi97x+12x/73weXktZM4wQINOJA7E=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.97vgmvl4mv.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -218,10 +218,10 @@
       "mscorlib.wasm": "sha256-KvqZaNpjwhrOuzE4b4aMFsI+VUTyiWfoDI4zn4l9BM8=",
       "netstandard.wasm": "sha256-v+s7sWxtOM6bnOvC0jFrtnm6uMfbDymwl2nHNgbS2LM=",
       "System.Private.CoreLib.wasm": "sha256-pklll63uFQoY6vaD3vbluS9osYiJWLLLmob1yHFgepI=",
-      "WidenerCSCIWebPage.wasm": "sha256-2tme4dCVn0aJDyGhorAmlQGyPtg5p63+FGgdVC+fS/o="
+      "WidenerCSCIWebPage.wasm": "sha256-LOdbrGgm7yDGHyEAYuLXUZ2ui9aIp9RXYb9fiJNODek="
     },
     "pdb": {
-      "WidenerCSCIWebPage.pdb": "sha256-oP38S8qgqCSIoYkI2XXSuHBHMxIunD+VG5+ZlzS2ApY="
+      "WidenerCSCIWebPage.pdb": "sha256-wEXfHXE20SH5nUhXY/Co43aU4VZmePgkWcE8Ndl0ThY="
     }
   },
   "cacheBootResources": true,
